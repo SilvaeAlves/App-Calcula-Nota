@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calcula Nota</string>
+    <string name="media_das_notas">Média das Notas</string>
+    <string name="aluno1">Aluno1</string>
+    <string name="aluno2">Aluno2</string>
+    <string name="aluno3">Aluno3</string>
+    <string name="aluno4">Aluno4</string>
+    <string name="aluno5">Aluno5</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="resultado">Resultado</string>
+    <string name="voltar">Voltar</string>
+    <string name="status">Status</string>
+    <string name="nota_final">Nota Final</string>
+</resources>

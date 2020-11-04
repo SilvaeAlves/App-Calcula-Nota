@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/mediaNota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:text="@string/media_das_notas"
+        android:textSize="35sp"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alunoUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/aluno1"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediaNota" />
+
+    <TextView
+        android:id="@+id/alunoDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/aluno2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoUm" />
+
+    <TextView
+        android:id="@+id/alunoTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/aluno3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoDois" />
+
+    <TextView
+        android:id="@+id/alunoQuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/aluno4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoTres" />
+
+    <TextView
+        android:id="@+id/alunoCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/aluno5"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoQuatro" />
+
+    <EditText
+        android:id="@+id/edNota1"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edNota2"
+        app:layout_constraintEnd_toEndOf="@+id/edNota3"
+        app:layout_constraintStart_toEndOf="@+id/alunoUm"
+        app:layout_constraintTop_toBottomOf="@+id/mediaNota" />
+
+
+    <EditText
+        android:id="@+id/edNota2"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/edNota1"
+        app:layout_constraintTop_toBottomOf="@+id/mediaNota" />
+
+    <EditText
+        android:id="@+id/edNota3"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edNota4"
+        app:layout_constraintStart_toEndOf="@+id/alunoDois"
+        app:layout_constraintTop_toBottomOf="@+id/edNota1" />
+
+    <EditText
+        android:id="@+id/edNota4"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:autofillHints="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/edNota3"
+        app:layout_constraintTop_toBottomOf="@+id/edNota2" />
+
+    <EditText
+        android:id="@+id/edNota5"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edNota6"
+        app:layout_constraintStart_toEndOf="@+id/alunoTres"
+        app:layout_constraintTop_toBottomOf="@+id/edNota3" />
+
+    <EditText
+        android:id="@+id/edNota6"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/edNota5"
+        app:layout_constraintTop_toBottomOf="@+id/edNota4" />
+
+    <EditText
+        android:id="@+id/edNota7"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edNota8"
+        app:layout_constraintStart_toEndOf="@+id/alunoQuatro"
+        app:layout_constraintTop_toBottomOf="@+id/edNota5" />
+
+    <EditText
+        android:id="@+id/edNota8"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/edNota7"
+        app:layout_constraintTop_toBottomOf="@+id/edNota6" />
+
+    <EditText
+        android:id="@+id/edNota9"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/edNota10"
+        app:layout_constraintStart_toEndOf="@+id/alunoCinco"
+        app:layout_constraintTop_toBottomOf="@+id/edNota7" />
+
+    <EditText
+        android:id="@+id/edNota10"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/edNota9"
+        app:layout_constraintTop_toBottomOf="@+id/edNota8" />
+
+    <Button
+        android:id="@+id/btnCalc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

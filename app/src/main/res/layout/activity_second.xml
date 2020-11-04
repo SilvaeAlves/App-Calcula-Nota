@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".view.SecondActivity">
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/resultado"
+        android:textColor="@color/whiteColor"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/alunoUm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/aluno1"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <TextView
+        android:id="@+id/alunoDois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/aluno2"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoUm" />
+
+    <TextView
+        android:id="@+id/alunoTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/aluno3"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoDois" />
+
+
+    <TextView
+        android:id="@+id/alunoQuatro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/aluno4"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoTres" />
+
+    <TextView
+        android:id="@+id/alunoCinco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:text="@string/aluno5"
+        android:textColor="@color/whiteColor"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/alunoQuatro" />
+
+    <TextView
+        android:id="@+id/tNotaFinal1"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/nota_final"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/alunoUm"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <TextView
+        android:id="@+id/tNotaFinal2"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/nota_final"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/alunoDois"
+        app:layout_constraintTop_toBottomOf="@+id/tNotaFinal1" />
+
+    <TextView
+        android:id="@+id/tNotaFinal3"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/nota_final"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/alunoTres"
+        app:layout_constraintTop_toBottomOf="@+id/tNotaFinal2" />
+
+    <TextView
+        android:id="@+id/tNotaFinal4"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/nota_final"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/alunoQuatro"
+        app:layout_constraintTop_toBottomOf="@+id/tNotaFinal3" />
+
+    <TextView
+        android:id="@+id/tNotaFinal5"
+        android:layout_width="95dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/nota_final"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/alunoCinco"
+        app:layout_constraintTop_toBottomOf="@+id/tNotaFinal4" />
+
+    <TextView
+        android:id="@+id/resultAluno1"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/tNotaFinal1"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
+
+    <TextView
+        android:id="@+id/resultAluno2"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/tNotaFinal2"
+        app:layout_constraintTop_toBottomOf="@+id/resultAluno1" />
+
+    <TextView
+        android:id="@+id/resultAluno3"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/tNotaFinal3"
+        app:layout_constraintTop_toBottomOf="@+id/resultAluno2" />
+
+    <TextView
+        android:id="@+id/resultAluno4"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/tNotaFinal4"
+        app:layout_constraintTop_toBottomOf="@+id/resultAluno3" />
+
+    <TextView
+        android:id="@+id/resultAluno5"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="@string/status"
+        android:textColor="@color/whiteColor"
+        app:layout_constraintStart_toEndOf="@+id/tNotaFinal5"
+        app:layout_constraintTop_toBottomOf="@+id/resultAluno4" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:text="@string/voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultAluno5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
